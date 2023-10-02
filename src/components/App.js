@@ -4,9 +4,8 @@ import itemData from "../data/items";
 
 const App = () => {
   const [isDark, setIsDark] = useState(false);
-  const handleDarkModeClick = () => {
-    setIsDark((isDark) => !isDark);
-  };
+
+  const handleDarkModeClick = () => setIsDark((isDark) => !isDark);
 
   return (
     <div className={`App ${isDark ? "dark" : "light"}`}>
